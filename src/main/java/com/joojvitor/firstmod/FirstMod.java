@@ -5,6 +5,8 @@ import com.joojvitor.firstmod.item.ModItems;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +28,13 @@ import java.util.stream.Collectors;
 public class FirstMod
 {
     public static final String MOD_ID = "firstmod";
+
+    public static final ItemGroup FIRSTMOD_TAB = new ItemGroup("FirstMod") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.COPPER_WIRE.get());
+        }
+    };
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
