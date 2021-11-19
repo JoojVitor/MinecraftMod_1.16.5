@@ -1,5 +1,6 @@
 package com.joojvitor.firstmod;
 
+import com.joojvitor.firstmod.block.ModBlocks;
 import com.joojvitor.firstmod.item.ModItems;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.Block;
@@ -32,6 +33,7 @@ public class FirstMod
     public FirstMod() {
         Registration.register();
         ModItems.register();
+        ModBlocks.register();
 
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
