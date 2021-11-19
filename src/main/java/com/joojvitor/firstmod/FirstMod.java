@@ -1,5 +1,7 @@
 package com.joojvitor.firstmod;
 
+import com.joojvitor.firstmod.item.ModItems;
+import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +30,9 @@ public class FirstMod
     private static final Logger LOGGER = LogManager.getLogger();
 
     public FirstMod() {
+        Registration.register();
+        ModItems.register();
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
