@@ -3,8 +3,14 @@
   "item.firstmod.copper_wire": "Copper Wire",
   "item.firstmod.coppered_apple": "\u00A7aCoppered Apple\u00A7r",
 
+  "item.firstmod.copper_shovel": "Copper Shovel",
+  "item.firstmod.copper_sword": "Copper Sword",
+  "item.firstmod.copper_axe": "Copper Axe",
+  "item.firstmod.copper_pickaxe": "Copper Pickaxe",
+  "item.firstmod.copper_hoe": "Copper Hoe",
+
   "block.firstmod.copper_block": "Copper Block",
   "block.firstmod.copper_ore": "Copper Ore",
 
-  "itemGroup.firstmod": "FirstMod"
+  "itemGroup.firstmodtab": "FirstMod"
 }

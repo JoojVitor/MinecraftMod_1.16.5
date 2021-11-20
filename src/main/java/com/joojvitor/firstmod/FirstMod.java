@@ -29,7 +29,7 @@ public class FirstMod
 {
     public static final String MOD_ID = "firstmod";
 
-    public static final ItemGroup FIRSTMOD_TAB = new ItemGroup("FirstMod") {
+    public static final ItemGroup FIRSTMOD_TAB = new ItemGroup("firstmodtab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.COPPER_WIRE.get());

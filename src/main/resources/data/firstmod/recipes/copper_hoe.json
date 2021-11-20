@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cc",
+    " x",
+    " x"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:stick"
+    },
+    "c": {
+      "item": "firstmod:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "firstmod:copper_hoe"
+  }
+}
