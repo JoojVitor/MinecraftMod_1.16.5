@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "firstmod:copper_ore"
+  },
+  "result": "firstmod:copper_ingot",
+  "experience": 7.0,
+  "cookingtime": 60
+}

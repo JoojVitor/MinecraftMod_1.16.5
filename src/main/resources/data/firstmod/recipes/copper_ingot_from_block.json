@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "",
+  "ingredients": [
+    { "item": "firstmod:copper_block" }
+  ],
+  "result": {
+    "item": "firstmod:copper_ingot",
+    "count": 9
+  }
+}
