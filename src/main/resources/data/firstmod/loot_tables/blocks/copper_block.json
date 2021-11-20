@@ -1,0 +1,14 @@
+{
+  "types": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "firstmod:copper_block"
+        }
+      ]
+    }
+  ]
+}
