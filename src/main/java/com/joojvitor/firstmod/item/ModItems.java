@@ -17,6 +17,10 @@ public class ModItems {
             Registration.ITEMS.register("copper_wire",() ->
                     new Item(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
 
+    public static final RegistryObject<Item> COPPERED_APPLE =
+            Registration.ITEMS.register("coppered_apple", () ->
+                    new CopperedApple(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+
     public static void register() {
 
     }

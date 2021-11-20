@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "firstmod:copper_ingot"
+    },
+    "y": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "firstmod:coppered_apple"
+  }
+}
