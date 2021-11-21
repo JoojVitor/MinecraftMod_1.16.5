@@ -59,15 +59,4 @@ public class ModEvents {
             }
         }
     }
-
-    @SubscribeEvent
-    public void onLevitationWand(AttackEntityEvent event) {
-        if (event.getPlayer().getHeldItemMainhand().getItem() == ModItems.LEVITATION_WAND.get()) {
-            if (event.getTarget().isAlive()) {
-                LivingEntity target = (LivingEntity) event.getTarget();
-
-                target.addPotionEffect(new EffectInstance(Effects.LEVITATION, 600));
-            }
-        }
-    }
 }

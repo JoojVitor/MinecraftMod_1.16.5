@@ -1,4 +1,4 @@
-package com.joojvitor.firstmod.item;
+package com.joojvitor.firstmod.item.custom;
 
 import com.joojvitor.firstmod.FirstMod;
 import net.minecraft.item.Food;

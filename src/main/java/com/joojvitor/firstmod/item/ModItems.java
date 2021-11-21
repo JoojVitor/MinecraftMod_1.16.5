@@ -1,6 +1,8 @@
 package com.joojvitor.firstmod.item;
 
 import com.joojvitor.firstmod.FirstMod;
+import com.joojvitor.firstmod.item.custom.CopperedApple;
+import com.joojvitor.firstmod.item.custom.LevitationWand;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -26,7 +28,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> LEVITATION_WAND =
             Registration.ITEMS.register("levitation_wand", () ->
-                    new Item(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+                    new LevitationWand(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)
+                            .maxDamage(20)));
 
     /* TOOLS */
 
