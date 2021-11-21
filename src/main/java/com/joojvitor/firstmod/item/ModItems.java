@@ -20,6 +20,14 @@ public class ModItems {
             Registration.ITEMS.register("coppered_apple", () ->
                     new CopperedApple(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
 
+    public static final RegistryObject<Item> SHULKER_DUST =
+            Registration.ITEMS.register("shulker_dust", () ->
+                    new Item(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+
+    public static final RegistryObject<Item> LEVITATION_WAND =
+            Registration.ITEMS.register("levitation_wand", () ->
+                    new Item(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+
     /* TOOLS */
 
     public static final RegistryObject<Item> COPPER_SHOVEL =

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  d",
+    " b ",
+    "d  "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:blaze_rod"
+    },
+    "d": {
+      "item": "firstmod:shulker_dust"
+    }
+  },
+  "result": {
+    "item": "firstmod:levitation_wand"
+  }
+}

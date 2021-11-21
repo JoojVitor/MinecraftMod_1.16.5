@@ -1,6 +1,7 @@
 {
   "item.firstmod.copper_ingot": "Copper Ingot",
   "item.firstmod.copper_wire": "Copper Wire",
+  "item.firstmod.shulker_dust": "Shulker Dust",
   "item.firstmod.coppered_apple": "\u00A7aCoppered Apple\u00A7r",
 
   "item.firstmod.copper_shovel": "Copper Shovel",
@@ -8,6 +9,7 @@
   "item.firstmod.copper_axe": "Copper Axe",
   "item.firstmod.copper_pickaxe": "Copper Pickaxe",
   "item.firstmod.copper_hoe": "Copper Hoe",
+  "item.firstmod.levitation_wand": "\u00A7bLevitation Wand\u00A7r",
 
   "block.firstmod.copper_block": "Copper Block",
   "block.firstmod.copper_ore": "Copper Ore",

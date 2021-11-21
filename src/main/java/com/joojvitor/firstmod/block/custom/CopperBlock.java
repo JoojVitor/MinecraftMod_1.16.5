@@ -5,6 +5,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import org.apache.logging.log4j.LogManager;
 
@@ -17,7 +19,8 @@ public class CopperBlock extends Block {
     @Override
     public void onBlockClicked(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player) {
         if(world.isRemote) {
-            LogManager.getLogger().info("Hello you left clicked on me, Sir");
+            String msg = blockPos.getCoordinatesAsString();
+            player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
         }
 
         super.onBlockClicked(blockState, world, blockPos, player);
@@ -26,7 +29,8 @@ public class CopperBlock extends Block {
     @Override
     public void onFallenUpon(World world, BlockPos blockPos, Entity entity, float fallDistance) {
         if (world.isRemote) {
-            LogManager.getLogger().info(String.format("%s", fallDistance));
+            String msg = String.format("%s", fallDistance);
+            entity.sendMessage(new StringTextComponent(msg), entity.getUniqueID());
         }
 
         super.onFallenUpon(world, blockPos, entity, fallDistance);
