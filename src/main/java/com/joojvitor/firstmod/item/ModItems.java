@@ -2,6 +2,7 @@ package com.joojvitor.firstmod.item;
 
 import com.joojvitor.firstmod.FirstMod;
 import com.joojvitor.firstmod.item.custom.CopperedApple;
+import com.joojvitor.firstmod.item.custom.Firewood;
 import com.joojvitor.firstmod.item.custom.LevitationWand;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -29,12 +30,16 @@ public class ModItems {
             Registration.ITEMS.register("shulker_dust", () ->
                     new Item(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
 
+    public static final RegistryObject<Item> FIREWOOD =
+            Registration.ITEMS.register("firewood", () ->
+                    new Firewood(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+
+
+    /* TOOLS */
     public static final RegistryObject<Item> LEVITATION_WAND =
             Registration.ITEMS.register("levitation_wand", () ->
                     new LevitationWand(new Item.Properties().group(FirstMod.FIRSTMOD_TAB)
                             .maxDamage(20)));
-
-    /* TOOLS */
 
     public static final RegistryObject<Item> COPPER_SHOVEL =
             Registration.ITEMS.register("copper_shovel",

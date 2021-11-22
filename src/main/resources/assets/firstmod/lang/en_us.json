@@ -2,6 +2,7 @@
   "item.firstmod.copper_ingot": "Copper Ingot",
   "item.firstmod.copper_wire": "Copper Wire",
   "item.firstmod.shulker_dust": "Shulker Dust",
+  "item.firstmod.firewood": "Firewood",
   "item.firstmod.coppered_apple": "\u00A7aCoppered Apple\u00A7r",
 
   "item.firstmod.copper_shovel": "Copper Shovel",
@@ -18,6 +19,12 @@
 
   "block.firstmod.copper_block": "Copper Block",
   "block.firstmod.copper_ore": "Copper Ore",
+  "block.firstmod.copper_stairs": "Copper Stairs",
+  "block.firstmod.copper_slab": "Copper Slab",
+  "block.firstmod.copper_fence": "Copper Fence",
+  "block.firstmod.copper_fence_gate": "Copper Fence Gate",
+  "block.firstmod.copper_pressure_plate": "Copper Pressure Plate",
+  "block.firstmod.copper_wall": "Copper Wall",
 
   "itemGroup.firstmodtab": "FirstMod"
 }

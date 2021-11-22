@@ -3,9 +3,7 @@ package com.joojvitor.firstmod.block;
 import com.joojvitor.firstmod.FirstMod;
 import com.joojvitor.firstmod.block.custom.CopperBlock;
 import com.joojvitor.firstmod.util.Registration;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -30,6 +28,26 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .setRequiresTool()
                     .sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> COPPER_STAIRS =
+            register("copper_stairs", () -> new StairsBlock(() ->
+                    ModBlocks.COPPER_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> COPPER_FENCE =
+            register("copper_fence", () -> new FenceBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> COPPER_FENCE_GATE =
+            register("copper_fence_gate", () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> COPPER_PRESSURE_PLATE =
+            register("copper_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> COPPER_SLAB =
+            register("copper_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> COPPER_WALL =
+            register("copper_wall", () -> new WallBlock(AbstractBlock.Properties.create(Material.IRON)));
 
     public static void register() {
 
