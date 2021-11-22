@@ -11,6 +11,11 @@
   "item.firstmod.copper_hoe": "Copper Hoe",
   "item.firstmod.levitation_wand": "\u00A7bLevitation Wand\u00A7r",
 
+  "item.firstmod.copper_helmet": "Copper Helmet",
+  "item.firstmod.copper_chestplate": "Copper Chestplate",
+  "item.firstmod.copper_leggings": "Copper Leggings",
+  "item.firstmod.copper_boots": "Copper Boots",
+
   "block.firstmod.copper_block": "Copper Block",
   "block.firstmod.copper_ore": "Copper Ore",
 
