@@ -26,7 +26,8 @@ public class LevitationWand extends Item {
         boolean isPlayerLevitating = playerIn.getActivePotionEffect(Effects.LEVITATION) != null;
 
         if (!worldIn.isRemote && playerIn.isCrouching() && !isPlayerLevitating) {
-            playerIn.addPotionEffect(new EffectInstance(Effects.LEVITATION, 300));
+            playerIn.addPotionEffect(new EffectInstance(Effects.LEVITATION, 300, 0,
+                    false, false, false));
 
             ItemStack stack = playerIn.getHeldItemMainhand().getStack();
             stack.damageItem(1, playerIn, player -> player.sendBreakAnimation(handIn));
@@ -40,7 +41,8 @@ public class LevitationWand extends Item {
         boolean isTargetLevitating = target.getActivePotionEffect(Effects.LEVITATION) != null;
 
         if (target.isAlive() && !isTargetLevitating) {
-            target.addPotionEffect(new EffectInstance(Effects.LEVITATION, 300));
+            target.addPotionEffect(new EffectInstance(Effects.LEVITATION, 300, 0,
+                    false, false, false));
 
             stack.damageItem(1, attacker, player -> player.sendBreakAnimation(attacker.getActiveHand()));
         }

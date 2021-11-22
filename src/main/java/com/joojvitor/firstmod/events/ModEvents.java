@@ -1,6 +1,7 @@
 package com.joojvitor.firstmod.events;
 
 import com.joojvitor.firstmod.item.ModItems;
+import com.joojvitor.firstmod.util.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.passive.SheepEntity;
@@ -32,7 +33,9 @@ public class ModEvents {
                     //"delete" one of the held item
                     player.getHeldItemMainhand().shrink(1);
 
-                    target.addPotionEffect(new EffectInstance(Effects.GLOWING, 600));
+                    target.addPotionEffect(new EffectInstance(Effects.GLOWING,
+                            Config.COPPERED_GLOW_DURATION.get(),
+                            Config.COPPERED_GLOW_AMPLIFIER.get()));
 
                     if (!player.world.isRemote) {
                         String msg = TextFormatting.YELLOW + "Sheep is now glowing";
