@@ -1,12 +1,15 @@
 package com.joojvitor.firstmod;
 
 import com.joojvitor.firstmod.block.ModBlocks;
+import com.joojvitor.firstmod.block.ModFluids;
 import com.joojvitor.firstmod.events.ModEvents;
 import com.joojvitor.firstmod.item.ModItems;
 import com.joojvitor.firstmod.util.Config;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -51,6 +54,7 @@ public class FirstMod
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register(new ModEvents());
 
@@ -80,6 +84,7 @@ public class FirstMod
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         //LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+        RenderTypeLookup.setRenderLayer(ModBlocks.ZUCCINI_CROP.get(), RenderType.getCutout());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

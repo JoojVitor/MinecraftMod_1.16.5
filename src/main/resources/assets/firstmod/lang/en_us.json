@@ -16,6 +16,7 @@
   "item.firstmod.copper_chestplate": "Copper Chestplate",
   "item.firstmod.copper_leggings": "Copper Leggings",
   "item.firstmod.copper_boots": "Copper Boots",
+  "item.firstmod.oil_bucket": "Oil Bucket",
 
   "block.firstmod.copper_block": "Copper Block",
   "block.firstmod.copper_ore": "Copper Ore",
@@ -25,6 +26,8 @@
   "block.firstmod.copper_fence_gate": "Copper Fence Gate",
   "block.firstmod.copper_pressure_plate": "Copper Pressure Plate",
   "block.firstmod.copper_wall": "Copper Wall",
+
+  "block.firstmod.zuccini_crop": "Zuccini Seeds",
 
   "itemGroup.firstmodtab": "FirstMod"
 }

@@ -1,6 +1,8 @@
 package com.joojvitor.firstmod.item;
 
 import com.joojvitor.firstmod.FirstMod;
+import com.joojvitor.firstmod.block.ModBlocks;
+import com.joojvitor.firstmod.block.ModFluids;
 import com.joojvitor.firstmod.item.custom.CopperedApple;
 import com.joojvitor.firstmod.item.custom.Firewood;
 import com.joojvitor.firstmod.item.custom.LevitationWand;
@@ -97,6 +99,16 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_BOOTS =
             Registration.ITEMS.register("copper_boots",
                     () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
+                            new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+
+    public static final RegistryObject<Item> ZUCCINI_SEED =
+            Registration.ITEMS.register("zuccini_seed",
+                    () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(),
+                            new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
+
+    public static final RegistryObject<Item> OIL_BUCKET =
+            Registration.ITEMS.register("oil_bucket", () ->
+                    new BucketItem(ModFluids.OIL_FLUID::get,
                             new Item.Properties().group(FirstMod.FIRSTMOD_TAB)));
 
     public static void register() { }

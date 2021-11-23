@@ -2,12 +2,12 @@ package com.joojvitor.firstmod.block;
 
 import com.joojvitor.firstmod.FirstMod;
 import com.joojvitor.firstmod.block.custom.CopperBlock;
+import com.joojvitor.firstmod.block.custom.ZucciniCrop;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
@@ -34,13 +34,16 @@ public class ModBlocks {
                     ModBlocks.COPPER_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.IRON)));
 
     public static final RegistryObject<Block> COPPER_FENCE =
-            register("copper_fence", () -> new FenceBlock(AbstractBlock.Properties.create(Material.IRON)));
+            register("copper_fence", () -> new FenceBlock(
+                    AbstractBlock.Properties.create(Material.IRON)));
 
     public static final RegistryObject<Block> COPPER_FENCE_GATE =
-            register("copper_fence_gate", () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)));
+            register("copper_fence_gate", () -> new FenceGateBlock(
+                    AbstractBlock.Properties.create(Material.IRON)));
 
     public static final RegistryObject<Block> COPPER_PRESSURE_PLATE =
-            register("copper_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+            register("copper_pressure_plate", () -> new PressurePlateBlock(
+                    PressurePlateBlock.Sensitivity.EVERYTHING,
                     AbstractBlock.Properties.create(Material.IRON)));
 
     public static final RegistryObject<Block> COPPER_SLAB =
@@ -48,6 +51,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COPPER_WALL =
             register("copper_wall", () -> new WallBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public  static final RegistryObject<Block> ZUCCINI_CROP =
+            Registration.BLOCKS.register("zuccini_crop", () -> new ZucciniCrop(
+                    AbstractBlock.Properties.from(Blocks.WHEAT)));
 
     public static void register() {
 

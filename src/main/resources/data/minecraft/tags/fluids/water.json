@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "firstmod:oil_flowing",
+    "firstmod:oil_fluid"
+  ]
+}
