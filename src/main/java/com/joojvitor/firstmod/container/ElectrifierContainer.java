@@ -1,6 +1,7 @@
 package com.joojvitor.firstmod.container;
 
 import com.joojvitor.firstmod.block.ModBlocks;
+import com.joojvitor.firstmod.tileentity.ElectrifierTile;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
@@ -110,5 +111,9 @@ public class ElectrifierContainer extends Container {
         addSlotBox(playerInventory, 9, leftCol, topRow, 9, 18, 3, 18);
         topRow += 58;
         addSlotRange(playerInventory, 0, leftCol, topRow, 9, 18);
+    }
+
+    public int getEnergyLevel() {
+        return ((ElectrifierTile) this.tileEntity).getEnergyLevel();
     }
 }
