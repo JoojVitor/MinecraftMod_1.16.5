@@ -10,7 +10,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 
-public class ElectrifierScreen extends ContainerScreen {
+public class ElectrifierScreen extends ContainerScreen<ElectrifierContainer> {
 
     private final ResourceLocation GUI = new ResourceLocation(FirstMod.MOD_ID,
             "textures/gui/electrifier_gui.png");
@@ -28,7 +28,7 @@ public class ElectrifierScreen extends ContainerScreen {
 
     @Override
     protected void drawGuiContainerForegroundLayer(MatrixStack matrixStack, int x, int y) {
-        drawString(matrixStack, Minecraft.getInstance().fontRenderer, "Energy: 0",
+        drawString(matrixStack, Minecraft.getInstance().fontRenderer, "Energy: " + container.getEnergyLevel(),
                 28, 10, 0xffffff);
     }
 
@@ -39,5 +39,6 @@ public class ElectrifierScreen extends ContainerScreen {
         int i = this.guiLeft;
         int j = this.guiTop;
         this.blit(matrixStack, i, j, 0, 0, this.xSize, this.ySize);
+        this.blit(matrixStack, i + 13, j + 9, 176, 0, 11, 64 - container.getEnergyLevel());
     }
 }
