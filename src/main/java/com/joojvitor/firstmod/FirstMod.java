@@ -2,6 +2,7 @@ package com.joojvitor.firstmod;
 
 import com.joojvitor.firstmod.block.ModBlocks;
 import com.joojvitor.firstmod.block.ModFluids;
+import com.joojvitor.firstmod.container.ModContainers;
 import com.joojvitor.firstmod.events.ModEvents;
 import com.joojvitor.firstmod.item.ModItems;
 import com.joojvitor.firstmod.setup.ClientProxy;
@@ -103,6 +104,7 @@ public class FirstMod
         ModBlocks.register();
         ModFluids.register();
         ModTileEntities.register();
+        ModContainers.register();
 
         // register mod events
         MinecraftForge.EVENT_BUS.register(new ModEvents());
