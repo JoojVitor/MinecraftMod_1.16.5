@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "firstmod:block/electrifier" },
+		"facing=south": { "model": "firstmod:block/electrifier", "y": 180 },
+		"facing=west": { "model": "firstmod:block/electrifier", "y": 270 },
+		"facing=east": { "model": "firstmod:block/electrifier", "y": 90 }
+	}
+}

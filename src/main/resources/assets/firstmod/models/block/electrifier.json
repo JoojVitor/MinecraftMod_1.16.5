@@ -1,0 +1,70 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "firstmod:block/electrifier_1",
+    "1": "firstmod:block/electrifier_2",
+    "2": "firstmod:block/electrifier_3",
+    "3": "firstmod:block/electrifier_4",
+    "4": "firstmod:block/electrifier_5",
+    "particle": "firstmod:block/electrifier_1"
+  },
+  "elements": [
+    {
+      "from": [0.5, 0, 3.35],
+      "to": [15.5, 5, 12.35],
+      "rotation": {"angle": 0, "axis": "y", "origin": [7.85, 2.5, 7.85]},
+      "faces": {
+        "north": {"uv": [0, 0, 9, 14], "texture": "#1"},
+        "east": {"uv": [0, 0, 9, 14], "texture": "#4"},
+        "south": {"uv": [0, 0, 9, 14], "texture": "#3"},
+        "west": {"uv": [0, 0, 9, 14], "texture": "#4"},
+        "up": {"uv": [0, 0, 9, 14], "rotation": 90, "texture": "#0"},
+        "down": {"uv": [0, 0, 9, 14], "rotation": 270, "texture": "#2"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [-25, -30, -30],
+      "translation": [1, 2.75, -2.75],
+      "scale": [0.59, 0.63, 0.59]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [3, -8, -19],
+      "translation": [0.25, 4, -1],
+      "scale": [0.59, 0.63, 0.59]
+    },
+    "firstperson_righthand": {
+      "rotation": [-8, -36, -3],
+      "translation": [0.25, 6.5, -2.75]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, -30, 3],
+      "translation": [3.5, 4.5, -3.5]
+    },
+    "ground": {
+      "translation": [0, 5, 0]
+    },
+    "gui": {
+      "rotation": [18.5, 36, -0.5],
+      "translation": [0, 3.75, 1.75],
+      "scale": [0.85, 0.85, 0.85]
+    },
+    "head": {
+      "rotation": [3, -180, 89.5],
+      "translation": [15, 0, 0]
+    },
+    "fixed": {
+      "rotation": [0, -90, 90],
+      "translation": [0, 0.5, -8.25]
+    }
+  },
+  "groups": [
+    {
+      "name": "VoxelShapes",
+      "origin": [8, 8, 8.35],
+      "color": 0,
+      "children": [0]
+    }
+  ]
+}

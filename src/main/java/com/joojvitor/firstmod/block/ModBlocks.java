@@ -2,6 +2,7 @@ package com.joojvitor.firstmod.block;
 
 import com.joojvitor.firstmod.FirstMod;
 import com.joojvitor.firstmod.block.custom.CopperBlock;
+import com.joojvitor.firstmod.block.custom.Electrifier;
 import com.joojvitor.firstmod.block.custom.ZucciniCrop;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.*;
@@ -55,6 +56,11 @@ public class ModBlocks {
     public  static final RegistryObject<Block> ZUCCINI_CROP =
             Registration.BLOCKS.register("zuccini_crop", () -> new ZucciniCrop(
                     AbstractBlock.Properties.from(Blocks.WHEAT)));
+
+    public static final RegistryObject<HorizontalBlock> ELECTRIFIER =
+            register("electrifier", () ->
+                    new Electrifier(AbstractBlock.Properties.create(Material.IRON)
+                            .zeroHardnessAndResistance()));
 
     public static void register() {
 
