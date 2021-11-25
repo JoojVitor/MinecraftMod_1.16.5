@@ -4,9 +4,11 @@ import com.joojvitor.firstmod.FirstMod;
 import com.joojvitor.firstmod.block.custom.CopperBlock;
 import com.joojvitor.firstmod.block.custom.Electrifier;
 import com.joojvitor.firstmod.block.custom.ZucciniCrop;
+import com.joojvitor.firstmod.block.custom.trees.RedwoodTree;
 import com.joojvitor.firstmod.util.Registration;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
@@ -61,6 +63,22 @@ public class ModBlocks {
             register("electrifier", () ->
                     new Electrifier(AbstractBlock.Properties.create(Material.IRON)
                             .zeroHardnessAndResistance()));
+
+    public static final RegistryObject<Block> REDWOOD_PLANKS = register("redwood_planks", () ->
+            new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> REDWOOD_LOG = register("redwood_log", () ->
+            new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> REDWOOD_LEAVES = register("redwood_leaves", () ->
+            new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+                    .sound(SoundType.PLANT)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> REDWOOD_SAPLING = register("redwood_sapling", () ->
+            new SaplingBlock(new RedwoodTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
 
     public static void register() {
 
