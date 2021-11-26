@@ -2,6 +2,7 @@ package com.joojvitor.firstmod.util;
 
 import com.joojvitor.firstmod.FirstMod;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
@@ -27,6 +28,9 @@ public class Registration {
     public static final DeferredRegister<ContainerType<?>> CONTAINERS =
             DeferredRegister.create(ForgeRegistries.CONTAINERS, FirstMod.MOD_ID);
 
+    public static DeferredRegister<EntityType<?>> ENTITY_TYPES =
+            DeferredRegister.create(ForgeRegistries.ENTITIES, FirstMod.MOD_ID);
+
     public static void init() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(eventBus);
@@ -34,5 +38,6 @@ public class Registration {
         FLUIDS.register(eventBus);
         TILE_ENTITY_TYPES.register(eventBus);
         CONTAINERS.register(eventBus);
+        ENTITY_TYPES.register(eventBus);
     }
 }

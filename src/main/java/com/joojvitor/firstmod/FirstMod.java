@@ -3,6 +3,7 @@ package com.joojvitor.firstmod;
 import com.joojvitor.firstmod.block.ModBlocks;
 import com.joojvitor.firstmod.block.ModFluids;
 import com.joojvitor.firstmod.container.ModContainers;
+import com.joojvitor.firstmod.entity.ModEntityTypes;
 import com.joojvitor.firstmod.events.ModEvents;
 import com.joojvitor.firstmod.item.ModItems;
 import com.joojvitor.firstmod.setup.ClientProxy;
@@ -11,31 +12,18 @@ import com.joojvitor.firstmod.setup.ServerProxy;
 import com.joojvitor.firstmod.tileentity.ModTileEntities;
 import com.joojvitor.firstmod.util.Config;
 import com.joojvitor.firstmod.util.Registration;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FirstMod.MOD_ID)
@@ -105,6 +93,7 @@ public class FirstMod
         ModFluids.register();
         ModTileEntities.register();
         ModContainers.register();
+        ModEntityTypes.register();
 
         // register mod events
         MinecraftForge.EVENT_BUS.register(new ModEvents());
